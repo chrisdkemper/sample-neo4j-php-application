@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js ie lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie lt-ie9 ie8"> <![endif]-->
+<!--[if IE]>         <html class="no-js ie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <title>Beginning Neo4j - Sample application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css">
+
+  <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+        <script src="/scripts/ie8.js"></script><![endif]-->
+
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
+  {% include 'includes/scripts.twig' %}
+
+</head>
+<body class="home">
+    <div class="info-panel">
+        <div class="location-panel">
+          <h2>Location</h2>
+          <div class="location-content">
+            Click a location to get information about it.
+          </div>
+        </div>
+        <div class="journey-panel">
+          <h2>Your Journey</h2>
+          <div class="journey-content"></div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <div style="display: none;">
+      <div class="plugin-container">
+        <div class="plugin">
+            <a class="plan-closest btn btn-default" herf="#">Plan from closest Transport</a>
+            <a class="find-closest btn btn-default" href="#">Find closest Transport</a>
+            <a class="reset-start btn btn-default" herf="#">Set start to marker</a>
+        </div>
+      </div>
+      <div class="to-marker-container">
+        <div class="to-marker">
+            <a class="plan-to btn btn-default" herf="#">Plan to here</a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

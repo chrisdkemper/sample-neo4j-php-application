@@ -1,0 +1,32 @@
+/* line 6, ../../bin/sass/screen.scss */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../../bin/sass/screen.scss */
+html, body, #map {
+  height: 100%;
+}
+
+/* line 16, ../../bin/sass/screen.scss */
+.info-panel {
+  background: #fff;
+  width: 300px;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  padding: 1em;
+  z-index: 1029;
+}
+
+/* line 26, ../../bin/sass/screen.scss */
+.journey-panel {
+  display: none;
+}
+
+/* line 30, ../../bin/sass/screen.scss */
+.reset-start {
+  display: none;
+}

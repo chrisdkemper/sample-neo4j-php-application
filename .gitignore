@@ -1,0 +1,6 @@
+.DS_Store
+.vagrant
+!.empty
+vendor
+!/web/scripts/vendor
+.sass-cache

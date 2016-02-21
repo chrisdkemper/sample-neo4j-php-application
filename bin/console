@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+set_time_limit(0);
+
+$app = require_once __DIR__ . '/../app/bootstrap.php';
+
+use ChrisDKemper\Command\BusStopImportCommand;
+use ChrisDKemper\Command\IndexCreateCommand;
+use ChrisDKemper\Command\TimetableImportCommand;
+
+$application = $app['console'];
+$application->add(new BusStopImportCommand());
+$application->add(new IndexCreateCommand());
+$application->add(new TimetableImportCommand());
+$application->run();
+
+?>
